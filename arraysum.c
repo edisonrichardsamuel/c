@@ -1,19 +1,23 @@
-#include<stdio.h>
+#include <stdio.h>
 #include<conio.h>
-void main()
+int main()
 {
-    int a[25],n,i,k,sum=0;
+      int a[5],nn,o,sum=0;
+      int i;
     printf("Enter array size:");
-    scanf("%d",&n);
+    scanf("%d",&nn);
     printf("enter element number whose sum should be found:");
-    scanf("%d",&k);
-    for(i=1;i<=n;i++)
+    scanf("%d",&o);
+    for(i=1;i<=nn;i++)
     {
         scanf("%d",&a[i]);
     }
-    for(i=1;i<=k;i++)
+    for(i=1;i<=o;i++)
     {
         sum=sum+a[i];
     }
     printf("sum=%d",sum);
+
+
+    return 0;
 }
